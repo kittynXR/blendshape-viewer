@@ -87,7 +87,7 @@ namespace Hai.AnimationViewer.Scripts.Editor
             {
                 var thumbnailSizeSerialized = serializedObject.FindProperty(nameof(thumbnailSize));
                 var previousSize = thumbnailSizeSerialized.intValue;
-                EditorGUILayout.IntSlider(thumbnailSizeSerialized, 20, 300);
+                EditorGUILayout.IntSlider(thumbnailSizeSerialized, 0, 300);
                 if (_enabled)
                 {
                     var editorWindow = GetWindow(_projectBrowserType, false, null, false);
